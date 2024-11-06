@@ -8,7 +8,7 @@ public class FileRepository : IRepositoty
     private const string ContactsJson = "contacts.json";
     private List<Contact> _contacts;
     
-    public FileRepository()
+    public FileRepository()  //help me pls
     {
         InitializeAsync().GetAwaiter().GetResult();
     }
