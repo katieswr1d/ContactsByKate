@@ -17,7 +17,10 @@
       },
       "ContactBook.Core/1.0.0": {
         "runtime": {
-          "ContactBook.Core.dll": {}
+          "ContactBook.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.DAL/1.0.0": {
@@ -25,7 +28,10 @@
           "ContactBook.Core": "1.0.0"
         },
         "runtime": {
-          "ContactBook.DAL.dll": {}
+          "ContactBook.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

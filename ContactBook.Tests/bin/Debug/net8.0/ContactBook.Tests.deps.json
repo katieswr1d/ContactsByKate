@@ -14,7 +14,10 @@
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "coverlet.collector": "6.0.2",
           "xunit": "2.9.2",
-          "xunit.runner.visualstudio": "2.8.2"
+          "xunit.core": "2.9.2",
+          "xunit.runner.console": "2.9.2",
+          "xunit.runner.visualstudio": "3.0.0-pre.42",
+          "xunit.runner.wpf": "1.0.51"
         },
         "runtime": {
           "ContactBook.Tests.dll": {}
@@ -342,19 +345,27 @@
           }
         }
       },
-      "xunit.runner.visualstudio/2.8.2": {},
+      "xunit.runner.console/2.9.2": {},
+      "xunit.runner.visualstudio/3.0.0-pre.42": {},
+      "xunit.runner.wpf/1.0.51": {},
       "ContactBook.API/1.0.0": {
         "dependencies": {
           "ContactBook.Core": "1.0.0",
           "ContactBook.DAL": "1.0.0"
         },
         "runtime": {
-          "ContactBook.API.dll": {}
+          "ContactBook.API.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.Core/1.0.0": {
         "runtime": {
-          "ContactBook.Core.dll": {}
+          "ContactBook.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ContactBook.DAL/1.0.0": {
@@ -362,7 +373,10 @@
           "ContactBook.Core": "1.0.0"
         },
         "runtime": {
-          "ContactBook.DAL.dll": {}
+          "ContactBook.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -471,12 +485,26 @@
       "path": "xunit.extensibility.execution/2.9.2",
       "hashPath": "xunit.extensibility.execution.2.9.2.nupkg.sha512"
     },
-    "xunit.runner.visualstudio/2.8.2": {
+    "xunit.runner.console/2.9.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==",
-      "path": "xunit.runner.visualstudio/2.8.2",
-      "hashPath": "xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+      "sha512": "sha512-bzxrKRk1rm2ro//ElUS8MEejvOjYIpXHbt3XrziYBrY9qgqeOb6ULELRshts3M7N6V+wtuRb78u9GJZjqASVdQ==",
+      "path": "xunit.runner.console/2.9.2",
+      "hashPath": "xunit.runner.console.2.9.2.nupkg.sha512"
+    },
+    "xunit.runner.visualstudio/3.0.0-pre.42": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OZA+TIUFy8frNu4UkBk0woi0I2PdcjvUIYCbbBMw96Dir7j8nB9izSkIDFpOe/cumNT4Iejqsd2SJ9RRf5dQKQ==",
+      "path": "xunit.runner.visualstudio/3.0.0-pre.42",
+      "hashPath": "xunit.runner.visualstudio.3.0.0-pre.42.nupkg.sha512"
+    },
+    "xunit.runner.wpf/1.0.51": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AaohMM4EJHYppJKvxyWM1LG7t5fB5gAwOp9ikpyT4sothCgp32w361ElrQoeQAAtFQXHBdD08hT229q79GcS2Q==",
+      "path": "xunit.runner.wpf/1.0.51",
+      "hashPath": "xunit.runner.wpf.1.0.51.nupkg.sha512"
     },
     "ContactBook.API/1.0.0": {
       "type": "project",

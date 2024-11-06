@@ -17,7 +17,7 @@ public class ContactService : IContactService
         _repository.Create( FirstName,  LastName, EmailList, PhoneNumberListr);
         return true;
     }
-    public bool Clear() //метод для создания контакта
+    public bool Clear() //метод для удаления всех записей (создан для юнит тестов)
     {
         _repository.Clear();
         return true;

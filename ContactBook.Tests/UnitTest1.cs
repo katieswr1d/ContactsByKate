@@ -8,6 +8,11 @@ using System.Xml.Linq;
 using Xunit;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
+// можно было сделать несколько функций для теста,
+// я одну сделала, потому что один набор данных,
+// по которому делается 4 варианта поиска.
+// смысла нет на 4 делить, либо надо разные наборы данных делать.
+
 namespace ContactBook.Tests
 {
     public class UnitTest1
