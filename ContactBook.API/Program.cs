@@ -1,6 +1,7 @@
 ﻿using ContactBook.Core.Entity;
 using ContactBook.Core.Services;
 using ContactBook.DAL.Repositories;
+using System.Numerics;
 
 namespace ContactBook.API;
 
@@ -19,7 +20,7 @@ class Program
                               "3. Добавить новый контакт\n" +
                               "0. Завершить работу");
 
-            option = Console.ReadLine();
+            option = Console.ReadLine()!;
             switch (option)
             {
                 case "1":
@@ -34,6 +35,13 @@ class Program
                     var findOption = Console.ReadLine();
                     if (findOption == "1")
                     {
+                        Console.WriteLine("Введите имя, фамилию,  номер телефона  и email контакта  ");
+                        var name = Console.ReadLine()!;
+                        var surname = Console.ReadLine()!;
+                        var number = Console.ReadLine()!;
+                        var mail = Console.ReadLine()!;
+                        Console.WriteLine(
+                            $"Found contacts:\n {string.Join('\n', service.FindByAll(name, surname, number, mail!))}");
                     }
 
                     if (findOption == "2")
@@ -72,33 +80,31 @@ class Program
                     break;
 
                 case "3":
-                    var contact = new Contact();
-
                     Console.WriteLine("Введите имя контакта ");
-                    var parameter = Console.ReadLine();
-                    contact.FirstName = parameter!;
+                    string FirstName = Console.ReadLine()!;
 
                     Console.WriteLine("Введите фамилию контакта ");
-                    parameter = Console.ReadLine();
-                    contact.LastName = parameter!;
+                    string LastName = Console.ReadLine()!;
 
                     Console.WriteLine("Введите email(0 если закончить) ");
-                    parameter = Console.ReadLine();
-                    while (parameter != "0")
+                    List<string> EmailList = new();
+                    string email = Console.ReadLine()!;
+                    while (email != "0")
                     {
-                        contact.Email.Add(new Email() { Value = parameter ! });
-                        parameter = Console.ReadLine();
+                        if (email.Length > 0) { EmailList.Add(email); }
+                        email = Console.ReadLine()!;
                     }
 
                     Console.WriteLine("Введите номер телефона (0 если закончить) ");
-                    parameter = Console.ReadLine();
-                    while (parameter != "0")
+                    List<string> PhoneList = new();
+                    string phone = Console.ReadLine()!;
+                    while (phone != "0")
                     {
-                        contact.PhoneNumber.Add(new PhoneNumber() { Value = parameter ! });
-                        parameter = Console.ReadLine();
+                        if (phone.Length > 0) { PhoneList.Add(phone); }
+                        phone = Console.ReadLine()!;
                     }
 
-                    service.Create(contact);
+                    service.Create(FirstName!, LastName!, EmailList, PhoneList);
                     break;
 
                 case "0":
@@ -108,7 +114,7 @@ class Program
                     break;
             }
 
-            option = Console.ReadLine();
+            option = Console.ReadLine()!;
         }
     }
 }

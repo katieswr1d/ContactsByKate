@@ -7,15 +7,20 @@ public class ContactService : IContactService
 {
     private readonly IRepositoty _repository; //создаем экземпляр класса 
 
-
     public ContactService(IRepositoty repository)
     {
         _repository = repository;
     }
 
-    public void Create(Contact contact) //метод для создания контакта
+    public bool Create(string FirstName, string LastName, List<string> EmailList, List<string> PhoneNumberListr) //метод для создания контакта
     {
-        _repository.Create(contact);
+        _repository.Create( FirstName,  LastName, EmailList, PhoneNumberListr);
+        return true;
+    }
+    public bool Clear() //метод для создания контакта
+    {
+        _repository.Clear();
+        return true;
     }
 
     public IEnumerable<Contact> ReadAll() //метод для чтения всех контактов (только читает он данные из какого-то "абстрактного места", то есть важно, чтобы метод ReadAll в сервисе контакты прочитал и не особо важно где он эти данные возьмёт (откуда прочитает))
@@ -28,20 +33,18 @@ public class ContactService : IContactService
         return _repository.FilterContacts(contact =>
             string.Equals(contact.FirstName, firstName, StringComparison.CurrentCultureIgnoreCase) && //Ignorecase - игнорировать регистр при сравнении строк
             string.Equals(contact.LastName, lastName, StringComparison.CurrentCultureIgnoreCase) &&
-            contact.PhoneNumber != null &&
-            contact.PhoneNumber.Any(phone => phone.Value == phoneNumber) &&
-            contact.Email != null &&
-            contact.Email.Any(mail => mail.Value == email));
+            contact.PhoneNumberList != null &&
+            contact.PhoneNumberList.Any(phone => phone.Value == phoneNumber) &&
+            contact.EmailList != null &&
+            contact.EmailList.Any(mail => mail.Value == email));
     }
 
     
     public IEnumerable<Contact> FindByPhone(string phoneNumber)//м
     {
-
-
         return _repository.FilterContacts(contact =>
         {
-            foreach (var phone in contact.PhoneNumber)
+            foreach (var phone in contact.PhoneNumberList)
             {
                 if (phone.Value == phoneNumber) return true; //phone.Value мы пишем по причине того, что phone это экземпляр класса PhoneNumber, который мы создали, а Value его свойство33
             }
@@ -68,7 +71,7 @@ public class ContactService : IContactService
 
         return _repository.FilterContacts(contact =>
         {
-            foreach (var mail in contact.Email)
+            foreach (var mail in contact.EmailList)
             {
                 if (mail.Value == email) return true;
             }

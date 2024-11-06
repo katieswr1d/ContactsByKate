@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContactBook.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+116c02e2f7fd772ac67e58465f68453ab93a9f1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0328e7ace7c3db4637c5137b99bb26ec8e8b574a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContactBook.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContactBook.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
