@@ -16,6 +16,7 @@ public class FileRepository : IRepositoty
     public void Clear()
     {
         _contacts.Clear();
+        File.WriteAllTextAsync(ContactsJson, JsonSerializer.Serialize(_contacts));//запись и конвертация контакта на диск в определенном формате 
     }
 
     private async Task InitializeAsync()

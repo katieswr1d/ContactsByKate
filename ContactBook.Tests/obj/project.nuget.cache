@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "2Qf6XP3ZoMFzfOgDAugHOdHoJoZczvglW+Fahj4DATxlfB6zyzm9gDCVRQZW+88XDzOD8XqT+Xu/ozSUd385Ng==",
+  "dgSpecHash": "xz7Nikx2qV9VDNJW4zKiKZjYa+kzcx954VdqZF2NtaS9/vuAUMtF0VyF0VI0aZqC/Ss+4X1ukDoELvv6seNRTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AsusT\\Documents\\GitHub\\ContactsByKate\\ContactBook.Tests\\ContactBook.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AsusT\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.11.1\\microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\microsoft.testplatform.testhost\\17.11.1\\microsoft.testplatform.testhost.17.11.1.nupkg.sha512",
+    "C:\\Users\\AsusT\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\AsusT\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\xunit\\2.9.2\\xunit.2.9.2.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
@@ -18,20 +21,7 @@
     "C:\\Users\\AsusT\\.nuget\\packages\\xunit.core\\2.9.2\\xunit.core.2.9.2.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "C:\\Users\\AsusT\\.nuget\\packages\\xunit.runner.console\\2.9.2\\xunit.runner.console.2.9.2.nupkg.sha512",
-    "C:\\Users\\AsusT\\.nuget\\packages\\xunit.runner.visualstudio\\3.0.0-pre.42\\xunit.runner.visualstudio.3.0.0-pre.42.nupkg.sha512",
-    "C:\\Users\\AsusT\\.nuget\\packages\\xunit.runner.wpf\\1.0.51\\xunit.runner.wpf.1.0.51.nupkg.sha512"
+    "C:\\Users\\AsusT\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'xunit.runner.wpf 1.0.51' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "xunit.runner.wpf",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QEKlbyFABilNgTqnul2+fZVXjm8bj1QSlZgfFhfoXkvFzqGPctqZqSlE0Z+EKVsbk2Ldxy5zX8++rxfAYp6nHQ==",
+  "dgSpecHash": "HO8Kk4OfoaSPQXInqxQ4oIUoBBdMQeBD0A4727Dnss+9iqBXtVxAGLhJJwvR87alYWAsxQiKvRfZbALDuQiLDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\AsusT\\Documents\\GitHub\\ContactsByKate\\ContactBook.DAL\\ContactBook.DAL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\AsusT\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AsusT\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
+    "C:\\Users\\AsusT\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
