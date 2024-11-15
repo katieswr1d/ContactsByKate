@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xz7Nikx2qV9VDNJW4zKiKZjYa+kzcx954VdqZF2NtaS9/vuAUMtF0VyF0VI0aZqC/Ss+4X1ukDoELvv6seNRTg==",
+  "dgSpecHash": "ZmX3VSBmhNg9wzClG/qpexvQarKBRBE/pfF/RTOYnuVwvLG97+vhdEojOxeQN/iVR6gJF4PDvgxIUATh+tX32Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AsusT\\Documents\\GitHub\\ContactsByKate\\ContactBook.Tests\\ContactBook.Tests.csproj",
+  "projectFilePath": "C:\\Users\\AsusT\\RiderProjects\\ContactBook\\ContactBook.Tests\\ContactBook.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusT\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",

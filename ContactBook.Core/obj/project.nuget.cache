@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W3QhLZartc2VXbsWif/Rst6pywHV9KNakDtG6xIOhNw44FdYBpO3QugN8unHdDP9np6rtMO7bGrGz9tJlDthww==",
+  "dgSpecHash": "PwPAfzIHpWbwb1sEA4/vFiiG3DwwUzA2k9fpm0I7H7XXxPxlcNuWp+h9pG9ui8fHFGm/VcGBvz3S27qW8f7w/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AsusT\\Documents\\GitHub\\ContactsByKate\\ContactBook.Core\\ContactBook.Core.csproj",
+  "projectFilePath": "C:\\Users\\AsusT\\RiderProjects\\ContactBook\\ContactBook.Core\\ContactBook.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusT\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\AsusT\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",

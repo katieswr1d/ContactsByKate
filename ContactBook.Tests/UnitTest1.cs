@@ -8,6 +8,8 @@ using Xunit.Sdk;
 [assembly: TestCollectionOrderer(ordererTypeName: "ContactBook.Tests.Orderers.DisplayNameOrderer", ordererAssemblyName: "ContactBook.Tests")]
 namespace ContactBook.Tests
 {
+    //три коллекции тестов : 1 чистит 2 создает 3 читает/ищет (запускаются по очереди)
+    
     [Collection("A Test Collection")]
     public class ContactServiceTestA
     {
